@@ -1,0 +1,20 @@
+## Environment Requirements
+
+To run this project, make sure you install the following dependencies:
+
+```bash
+pip install transformers sentence_transformers pandas nltk lightgbm install scikit-learn numpy
+```
+
+## Code File explanation
+``data_vis.ipynb``: provide the visualization for 384 embedding vector through t-SNE and PCA.
+
+``Detective.ipynb``: training code for Detective embedding method. Run Detective to vectorizing 10,000 sample into 384D vector stored as .npy file.
+
+``KNN.ipynb``: use knn as classifier head test the two different embedding model. 
+
+``Lightgbm.ipynb``: use Lightgbm as classifier head test the two different embedding model.
+
+``SVM.ipynb``: use SVM as classifier head test the two different embedding model.
+
+``preprocess.ipynb``: load and combine original dataset from huggingface. Random selection 10,000 sample from combined dataset. Run the tf-idf and Sentence-BERT model to vectorizing 10,000 sample into 384D vector stored as .npy file.
